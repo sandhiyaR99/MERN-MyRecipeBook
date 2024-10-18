@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d50032;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin: 0 15px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  .links a:hover {
+    color: #a00023;
+  }
+  
+  body {
+    padding-top: 80px;
+  }
+  

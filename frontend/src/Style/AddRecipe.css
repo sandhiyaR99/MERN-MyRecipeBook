@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 40px 0px;
+  padding: 20px;
+}
+
+.add-recipe-container {
+  max-width: 600px;
+  margin: 40px auto; /* Added margin-top to increase space from navbar */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-container h2 {
+  text-align: center;
+  color: #e74c3c; /* Zomato Red */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="number"],
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #e74c3c; /* Zomato Red */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #c0392b; /* Darker Zomato Red */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e74c3c; /* Zomato Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c0392b; /* Darker Zomato Red */
+}
+
+@media (max-width: 600px) {
+  .add-recipe-container {
+      padding: 15px;
+  }
+
+  input[type="file"],
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  button {
+      font-size: 14px;
+  }
+}
