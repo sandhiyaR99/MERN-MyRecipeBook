@@ -43,5 +43,5 @@ app.post("/saved", async (req, res) => {
 
 app.listen(process.env.PORT, async () => {
     await main();
-    console.log("Server is running on port 5000");
+    console.log("Server is running");
 });
